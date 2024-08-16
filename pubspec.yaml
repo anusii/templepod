@@ -1,0 +1,51 @@
+name: templepod
+description: "A Solid Flutter project."
+publish_to: 'none'
+version: 0.0.1+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  solidpod:
+    git:
+      url: https://github.com/anusii/solidpod
+      ref: dev
+  
+  cupertino_icons: ^1.0.6
+  rename_app: ^1.6.1
+  window_manager: ^0.3.9
+  universal_io: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  integration_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+  # The original `dart-code-metrics` is end of live and has migrated to
+  # a paid service. This fork maintains it's compatibility with the
+  # latest flutter.
+
+  dart_code_metrics:
+    git:
+      url: https://github.com/anusii/dart-code-metrics.git
+      ref: dev
+
+dependency_overrides:
+  intl: ^0.19.0 # Use only if necessary for solidpod
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo.png
+    - assets/images/image.png
